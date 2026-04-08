@@ -1,0 +1,83 @@
+Build a modern web application called "Robot Rescue" — a human-in-the-loop emergency response platform for robots.
+
+TECH STACK:
+- Frontend: React (with clean component structure)
+- Styling: Tailwind CSS (modern, minimal, professional)
+- Backend: Node.js + Express (simple API)
+- No database required (use mock data / in-memory state)
+
+CORE CONCEPT:
+This platform simulates robots encountering real-world issues and allows human operators to respond in real time through a dashboard interface.
+
+UI/UX REQUIREMENTS:
+- Clean, modern SaaS dashboard design
+- Dark mode default (tech/robotics feel)
+- Responsive layout (desktop-first)
+- Sidebar navigation
+- Card-based UI for alerts
+- Real-time feeling (simulate updates with timers)
+
+PAGES / COMPONENTS:
+
+1. DASHBOARD (Main Page)
+- Title: "Active Robot Incidents"
+- Display list of robot alerts as cards
+- Each card includes:
+  - Robot ID (e.g. RX-204)
+  - Location (Warehouse A, Sector 3)
+  - Issue type (Obstacle detected, System error, Path blocked)
+  - Severity (Low / Medium / High)
+  - Timestamp
+  - Status (Waiting for response / In progress / Resolved)
+- Clicking a card opens detailed view
+
+2. INCIDENT DETAIL PAGE
+- Show:
+  - Robot camera feed (use placeholder image/video)
+  - Sensor data (mock values)
+  - Issue description
+- Provide action buttons:
+  - "Reroute Robot"
+  - "Pause Operation"
+  - "Manual Override"
+  - "Escalate Issue"
+- When action is clicked:
+  - Change status to "Resolved"
+  - Log the action
+
+3. INCIDENT LOG PANEL
+- Table or list of past incidents
+- Show:
+  - Robot ID
+  - Issue
+  - Action taken
+  - Resolution time
+
+4. ANALYTICS DASHBOARD
+- Simple charts (can be static/mock):
+  - Number of incidents
+  - Average response time
+  - Most common issue types
+
+FUNCTIONALITY:
+- Simulate incoming alerts every 10–20 seconds
+- Allow user to click and resolve incidents
+- Maintain in-memory state for active + resolved incidents
+- Show visual feedback when incidents are resolved
+
+DESIGN DETAILS:
+- Use color coding:
+  - Red = high severity
+  - Yellow = medium
+  - Green = resolved
+- Use icons for robots, alerts, and actions
+- Smooth transitions and hover effects
+- Clean typography (no clutter)
+
+EXTRA (if possible):
+- Add notification badge for new alerts
+- Add loading/animation effects
+- Add “Response time” timer per incident
+
+GOAL:
+Make this feel like a real SaaS product used by companies managing autonomous robots. Prioritize clarity, usability, and a professional interface over complexity.

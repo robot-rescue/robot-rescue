@@ -1,0 +1,99 @@
+Refactor and significantly improve the UI/UX of the existing "Robot Rescue" web app to make it feel like a premium, real-world SaaS mission control platform.
+
+DO NOT change core functionality — focus on design, layout, and user experience.
+
+DESIGN GOAL:
+Make the app feel like a high-end control system used by robotics companies (clean, futuristic, minimal, highly intuitive).
+
+---
+
+UI/UX IMPROVEMENTS:
+
+1. LAYOUT UPGRADE
+- Use a structured grid layout (like a professional dashboard)
+- Add a top navigation bar with:
+  - App name "Robot Rescue"
+  - Status indicator (e.g. "System Online")
+  - Notification bell icon
+  - User avatar placeholder
+- Keep sidebar but make it slimmer and more modern with icons only (expand on hover)
+
+---
+
+2. INCIDENT CARDS (CRITICAL)
+- Redesign cards to look more premium:
+  - Add subtle glassmorphism or soft shadow effect
+  - Include icons (robot, warning, location)
+  - Add a progress/urgency bar (based on time open)
+  - Add pulsing animation for high severity incidents
+- Improve spacing and alignment
+- Add hover animation (slight scale + glow)
+
+---
+
+3. DETAIL PAGE ENHANCEMENT
+- Split layout into 2 columns:
+  LEFT:
+    - Large “camera feed” panel (styled like a live feed with overlay text)
+  RIGHT:
+    - Robot info panel (clean cards for battery, temp, signal, etc.)
+
+- Style action buttons:
+  - Make them large, distinct, and color-coded:
+    - Reroute = blue
+    - Pause = yellow
+    - Override = red
+    - Escalate = purple
+  - Add icons to buttons
+  - Add hover + click animations
+
+---
+
+4. REAL-TIME FEEL (VERY IMPORTANT)
+- Add subtle animations:
+  - blinking “LIVE” indicator
+  - updating timers
+  - smooth card entry animation when new alert appears
+- Add notification toast when new incident appears:
+  “New high-severity incident detected”
+
+---
+
+5. ANALYTICS PAGE
+- Use clean, modern charts (card layout)
+- Add summary KPI cards at top:
+  - Total incidents
+  - Avg response time
+  - Active issues
+- Add icons + subtle gradients
+
+---
+
+6. VISUAL DESIGN SYSTEM
+- Use a consistent color palette:
+  - Dark background (#0f172a or similar)
+  - Accent color: electric orange OR neon blue
+- Improve typography:
+  - Large bold headers
+  - clean sans-serif font
+- Add consistent padding and spacing throughout
+
+---
+
+7. MICRO-INTERACTIONS (KEY FOR PREMIUM FEEL)
+- Buttons animate on click
+- Cards animate on hover
+- Smooth transitions between pages
+- Loading skeletons when switching views
+
+---
+
+8. OPTIONAL POLISH
+- Add “System Health” indicator (top corner)
+- Add “Active Robots Online” counter
+- Add subtle background grid or gradient for futuristic feel
+
+---
+
+GOAL:
+Make this look like a real enterprise robotics control platform (similar to Tesla / SpaceX dashboards). Prioritize visual polish, clarity, and smooth user experience over adding new features.

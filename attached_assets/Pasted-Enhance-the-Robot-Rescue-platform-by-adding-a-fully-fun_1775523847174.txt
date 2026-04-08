@@ -1,0 +1,123 @@
+Enhance the "Robot Rescue" platform by adding a fully functional Messages / Communications system to simulate real-time operator coordination.
+
+This system should feel like an internal mission control messaging tool and integrate with Assignments and Incident data.
+
+Do NOT remove existing features — only extend the system.
+
+---
+
+1. 💬 ADD "MESSAGES" TAB
+
+Create a new main navigation tab:
+→ “Messages”
+
+This opens a two-panel chat interface:
+
+LEFT PANEL (Inbox):
+- List of conversations per operator:
+  - Alex Chen
+  - Sarah Kim
+  - Jordan Patel
+  - Darren Watkins Jr.
+
+Each conversation preview shows:
+- last message snippet
+- timestamp
+- unread indicator (dot or badge)
+
+RIGHT PANEL (Chat View):
+- full message thread with selected operator
+
+---
+
+2. 📥 PRELOADED CONVERSATIONS (SIMULATION)
+
+Initialize each operator with realistic sample messages such as:
+
+Examples:
+- "Robot RX-301 is stuck near aisle 4"
+- "On it, rerouting now"
+- "Battery dropping fast, monitoring closely"
+- "Resolved — path cleared successfully"
+
+Include mix of:
+- operator messages
+- system-generated messages
+
+---
+
+3. 🤖 SYSTEM-GENERATED MESSAGES
+
+The system should automatically generate messages based on events:
+
+Trigger messages when:
+- incident is assigned:
+  → "Incident RX-204 assigned to you"
+
+- incident becomes high severity:
+  → "High priority alert detected"
+
+- incident is resolved:
+  → "Incident resolved successfully"
+
+These messages should appear in the relevant operator chat thread.
+
+---
+
+4. 🔗 LINK MESSAGES TO INCIDENTS
+
+- Each message can reference an incident ID
+- Clicking a message should navigate to the corresponding incident detail page
+- Incident detail page should show a small section:
+  → “Related Conversation”
+
+---
+
+5. 🧑‍💻 INTEGRATION WITH ASSIGNMENTS
+
+- When an incident is assigned to a user:
+  → automatically create a message in that user’s chat
+
+Example:
+“New assignment: RX-301 (Obstacle detected in Warehouse A)”
+
+---
+
+6. 🟢 OPERATOR STATUS INDICATORS
+
+In inbox list:
+- green dot = active/online (recent activity)
+- grey dot = idle
+- pulsing dot = currently handling an incident
+
+---
+
+7. ⚡ UX IMPROVEMENTS
+
+- Add smooth message animations
+- Add typing indicator:
+  → “Sarah is typing…”
+
+- Add quick reply buttons:
+  - “Acknowledged”
+  - “On it”
+  - “Escalating to supervisor”
+
+---
+
+8. 🧠 DESIGN GOAL
+
+The Messages system should feel like a real-time internal operations communication tool used in robotics control rooms.
+
+It should NOT feel like a casual chat app.
+
+Focus on:
+- clarity
+- operational tone
+- fast communication flow
+- integration with system events
+
+---
+
+GOAL:
+Create a fully integrated messaging system that connects assignments, incidents, and operator communication into one cohesive real-time operational platform.

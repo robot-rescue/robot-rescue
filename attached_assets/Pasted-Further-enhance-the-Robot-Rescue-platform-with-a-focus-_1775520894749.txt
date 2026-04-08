@@ -1,0 +1,130 @@
+Further enhance the "Robot Rescue" platform with a focus on realism, consistency, and advanced usability. Maintain the current design system, but improve the “live system” feel and unify filtering/search across the app.
+
+---
+
+1. 🎥 DYNAMIC CAMERA FEED VARIATION (MAKE IT FEEL LIVE)
+
+- Improve camera feeds so each incident feels unique:
+  - Use different images/GIFs based on issue type:
+    - Obstacle → warehouse obstruction image
+    - System error → glitch/static visual
+    - Path blocked → cluttered aisle
+  - Randomize slightly so repeats don’t look identical
+
+- Add subtle live effects:
+  - blinking “LIVE” indicator
+  - timestamp updating every second
+  - slight overlay (scanline, noise, or vignette)
+
+- Add label:
+  - “Robot RX-204 Feed – Warehouse A”
+
+---
+
+2. 🧾 LIST VIEW HOVER FIX (IMPORTANT)
+
+- Improve hover visibility in list view:
+  - On hover → apply soft background highlight based on severity:
+    - High → soft red tint
+    - Medium → orange/yellow tint
+    - Low → blue tint
+- Ensure text contrast remains readable
+- Add smooth transition animation
+
+---
+
+3. 🤖 AUTO-ASSIGN FEATURE (SMART UX)
+
+In Assignments page:
+
+- Add “Auto Assign” button
+- Logic (simple rule-based):
+  - Assign to least busy operator
+  - OR randomly assign if equal load
+
+- Display:
+  - assignment happens instantly
+  - small confirmation toast:
+    “Incident assigned to Sarah Kim”
+
+- Show workload per operator (e.g. “3 active incidents”)
+
+---
+
+4. 🔍 UNIFIED SEARCH + FILTER SYSTEM (ACROSS ALL PAGES)
+
+Apply consistent filtering/search across:
+- Dashboard (optional)
+- Incident Log
+- Assignments page
+
+FEATURES:
+- Search bar (top of page):
+  - search by robot ID, issue, or location
+
+- Filters:
+  - Severity (High / Medium / Low)
+  - Status (Active / Resolved / In Progress)
+  - Assigned user (on assignments page)
+  - Date range (on log page)
+
+- Sorting:
+  - Newest first
+  - Oldest first
+  - Severity priority
+
+- Make filters reusable components across pages
+
+---
+
+5. 📋 INCIDENT LOG IMPROVEMENT
+
+- Add same filters + search system as above
+- Ensure real-time filtering as user types
+- Improve table readability:
+  - alternating row colors (subtle)
+  - clearer spacing
+
+---
+
+6. 🧠 ASSIGNMENT PAGE IMPROVEMENT
+
+- Keep list format but enhance:
+  - show:
+    - incident
+    - assigned user
+    - severity
+    - status
+
+- Add:
+  - quick reassign dropdown per row
+  - color-coded severity indicator
+  - small avatar or initials for users
+
+---
+
+7. ⚡ GLOBAL UX CONSISTENCY
+
+- Ensure:
+  - all pages use same filter/search layout
+  - same hover behavior logic
+  - consistent spacing and typography
+
+- Add empty states:
+  - “No incidents found”
+  - “No assignments yet”
+
+---
+
+8. 🔔 OPTIONAL (HIGH IMPACT)
+
+- Add notification when auto-assign happens
+- Add “Live Activity Feed” (small panel showing:
+  - “New incident detected”
+  - “Assigned to Alex Chen”
+  - “Resolved by Sarah Kim”)
+
+---
+
+GOAL:
+Make the application feel like a real-time, mission-critical operations platform with consistent UX patterns, smart automation features, and a strong sense of live system activity.

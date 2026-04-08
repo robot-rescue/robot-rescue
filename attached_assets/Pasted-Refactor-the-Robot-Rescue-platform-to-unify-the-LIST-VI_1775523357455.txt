@@ -1,0 +1,98 @@
+Refactor the "Robot Rescue" platform to unify the LIST VIEW layout style across both the Assignments page and the Incident Log page.
+
+The goal is to make both pages visually match the existing "Active Alerts (List View)" design, including hover behavior, color feedback, spacing, and row structure.
+
+Do NOT change functionality — only standardize UI/UX consistency.
+
+---
+
+1. 📋 STANDARDIZE LIST LAYOUT (IMPORTANT)
+
+- Both Assignments page and Incident Log MUST use the same list layout style as "Active Alerts"
+
+This includes:
+- same row height
+- same spacing
+- same typography
+- same alignment system
+- same hover behavior
+
+---
+
+2. 🎨 HOVER STYLE (MATCH ACTIVE ALERTS)
+
+- On hover of any row:
+  - apply severity-based tint:
+    - High → subtle red glow/tint
+    - Medium → subtle orange/yellow tint
+    - Low → subtle blue tint
+
+- Ensure hover is:
+  - clearly visible
+  - smooth transition (not harsh)
+  - consistent across both pages
+
+---
+
+3. 🧾 SEVERITY COLOR SYSTEM (UNIFIED)
+
+- Use consistent severity indicators everywhere:
+  - High → red accent
+  - Medium → orange accent
+  - Low → blue accent
+
+- Apply to:
+  - row hover
+  - left border or accent indicator
+  - severity badge
+
+---
+
+4. 📏 ROW STRUCTURE CONSISTENCY
+
+Ensure both pages follow EXACT same structure:
+
+Each row should include:
+- Robot ID (single line, never wraps)
+- Issue type
+- Severity badge
+- Assigned operator (if applicable)
+- Status
+- Timestamp or duration
+
+- Prevent multi-line wrapping for Robot ID or key labels
+
+---
+
+5. 🧑‍💻 ASSIGNMENTS PAGE UPDATE
+
+- Convert Assignments page to match Active Alerts list UI exactly
+- Keep assignment actions (assign/reassign) but embed them cleanly into row layout
+- Maintain clarity without changing layout style
+
+---
+
+6. 📊 INCIDENT LOG PAGE UPDATE
+
+- Convert Incident Log to same list layout system
+- Maintain table-like data, but visually match Active Alerts list design
+- Ensure readability with consistent spacing and hover behavior
+
+---
+
+7. ⚡ VISUAL POLISH RULES
+
+- Ensure hover effects are identical across:
+  - Active Alerts
+  - Assignments
+  - Incident Log
+
+- Ensure:
+  - smooth transitions
+  - no conflicting background colors
+  - strong contrast for readability
+
+---
+
+GOAL:
+Create a unified, consistent list-based UI system across all operational pages so the platform feels like a single cohesive real-time mission control interface rather than separate components.

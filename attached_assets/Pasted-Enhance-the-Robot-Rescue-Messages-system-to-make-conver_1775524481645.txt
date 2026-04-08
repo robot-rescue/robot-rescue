@@ -1,0 +1,96 @@
+Enhance the "Robot Rescue" Messages system to make conversations more natural, realistic, and responsive.
+
+Currently, system and operator replies are too repetitive (e.g. always “On it”). Improve message variety and make responses context-aware while maintaining an operational tone.
+
+---
+
+1. 🧠 CONTEXT-AWARE RESPONSES (IMPORTANT)
+
+- Messages should respond to user input more naturally
+- Detect message intent and respond appropriately:
+
+Examples:
+
+If user says:
+“Thanks for that”
+→ Reply with:
+- “No problem”
+- “Got it 👍”
+- “Anytime”
+
+If user says:
+“Good work”
+→ Reply with:
+- “Appreciate it”
+- “Thanks, staying on it”
+- “All good here”
+
+If user gives instruction:
+“Check robot RX-301”
+→ Reply with:
+- “Checking now”
+- “On it, pulling diagnostics”
+
+If user acknowledges:
+“ok / sure / got it”
+→ Reply with:
+- “👍”
+- “Understood”
+- “Copy that”
+
+---
+
+2. 🤖 KEEP OPERATIONAL TONE (IMPORTANT)
+
+- Do NOT make chat feel casual like social media
+- Maintain mission-control style communication
+- Keep responses short, professional, and efficient
+
+Good examples:
+- “No issues detected”
+- “Resolved and monitored”
+- “Rerouting now”
+- “Acknowledged”
+
+---
+
+3. 🔁 ADD RESPONSE VARIATION (REMOVE REPETITION)
+
+- Avoid repeating “On it” constantly
+- Introduce variety pool such as:
+  - “On it”
+  - “Copy that”
+  - “Checking now”
+  - “Handled”
+  - “In progress”
+  - “Confirmed”
+
+System should randomly select appropriate variation based on context.
+
+---
+
+4. 💬 MAKE CHAT FEEL LIKE REAL COORDINATION
+
+- Allow small conversational acknowledgements
+- Operators should respond even to non-task messages
+
+Examples:
+User: “thanks”
+Operator: “No problem”
+User: “nice”
+Operator: “Appreciate it”
+User: “ok”
+Operator: “👍 acknowledged”
+
+---
+
+5. ⚡ MAINTAIN SYSTEM INTEGRATION
+
+- Ensure messages still link to incidents where relevant
+- System-generated alerts should remain unchanged
+- Only improve human-like responses, not system automation messages
+
+---
+
+GOAL:
+Make the messaging system feel like real operators communicating in a live mission control environment, with natural short responses that adapt to user tone while staying professional and operational.

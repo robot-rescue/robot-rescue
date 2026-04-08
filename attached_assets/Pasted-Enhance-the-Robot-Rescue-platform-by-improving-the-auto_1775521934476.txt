@@ -1,0 +1,118 @@
+Enhance the "Robot Rescue" platform by improving the automation system, making the application feel more alive, and unifying UI patterns between Assignments and Incident Log.
+
+Do not remove existing features — extend them.
+
+---
+
+1. 🤖 AUTO-ASSIGN (FIX + EXPAND)
+
+- Fix current behavior so ALL incoming incidents are auto-assigned (not just initial ones)
+
+- Every time a new incident is created:
+  → automatically assign it to an available operator
+
+- Assignment logic:
+  - prioritize least busy operator
+  - if equal, assign randomly
+
+- Continuously rebalance:
+  - ensure workload is distributed evenly
+
+- Display:
+  - update assignment instantly in UI
+  - show operator workload count (e.g. “2 active”)
+
+---
+
+2. ⏱️ AUTO-RESOLUTION SIMULATION (VERY IMPORTANT)
+
+Simulate real operations:
+
+- After assignment, each incident should:
+  - move to “In Progress”
+  - after a random delay (e.g. 10–30 seconds), auto-resolve
+
+- When resolved:
+  - move to Incident Log
+  - show:
+    - assigned operator
+    - action taken (randomized from available actions)
+    - total response time
+
+- Add visual feedback:
+  - small toast: “Incident resolved by Alex Chen”
+  - smooth transition out of active list
+
+---
+
+3. 🔁 INCIDENT LIFECYCLE STATES
+
+Ensure each incident clearly moves through:
+- Active → Assigned → In Progress → Resolved
+
+Add visual badges for each state
+
+---
+
+4. 📋 INCIDENT LOG UI (MATCH ASSIGNMENTS STYLE)
+
+- Redesign Incident Log to match Assignments list layout
+
+Use same:
+- row structure
+- spacing
+- typography
+- hover effects
+- color indicators
+
+Include columns:
+- Robot ID
+- Issue
+- Severity
+- Assigned Operator
+- Action Taken
+- Resolution Time
+
+- Keep filters + search fully functional
+
+---
+
+5. 🎯 LIVE SYSTEM FEEL (ENHANCED)
+
+- Add continuous activity:
+  - new incidents appear
+  - incidents get assigned automatically
+  - incidents resolve over time
+
+- Add optional “Live Activity Feed” panel:
+  showing:
+  - “New incident detected (RX-301)”
+  - “Assigned to Sarah Kim”
+  - “Resolved by Jordan Patel”
+
+---
+
+6. ⚡ VISUAL FEEDBACK IMPROVEMENTS
+
+- Add transition animations:
+  - incident card fades out when resolved
+  - list updates smoothly
+
+- Highlight status changes briefly:
+  - small glow when assigned
+  - small glow when resolved
+
+---
+
+7. 🧠 SMART TOUCHES
+
+- Prevent overloading one operator:
+  - cap max active incidents per operator (e.g. 3–5)
+
+- If overloaded:
+  - assign to next available operator
+
+---
+
+GOAL:
+Make the platform feel like a real-time operational system where incidents are continuously being created, assigned, and resolved — even without user interaction. Ensure UI consistency between Assignments and Incident Log for a polished, enterprise-grade experience.

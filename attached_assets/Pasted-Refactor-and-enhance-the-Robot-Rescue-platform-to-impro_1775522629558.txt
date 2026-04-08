@@ -1,0 +1,134 @@
+Refactor and enhance the "Robot Rescue" platform to improve control over automation, fix UI inconsistencies, and ensure a clean, professional, enterprise-grade user experience.
+
+Do NOT remove existing features — refine and improve them.
+
+---
+
+1. 🤖 AUTO-ASSIGN BEHAVIOR (FIX)
+
+- REMOVE automatic assignment on page load or incident creation
+
+- All new incidents should start as:
+  → Status: “Unassigned”
+
+---
+
+2. 🎯 ADD CONTROLLED AUTO-ASSIGN BUTTON
+
+On Assignments page:
+
+- Add a prominent button:
+  → “Auto Assign All Incidents”
+
+- When clicked:
+  - Assign ALL currently unassigned incidents
+  - Use logic:
+    - prioritize least busy operator
+    - distribute evenly
+
+- Show confirmation toast:
+  → “All incidents assigned successfully”
+
+---
+
+3. ⏱️ AUTO-RESOLUTION LOGIC (KEEP BUT CONTROLLED)
+
+- ONLY after an incident is assigned:
+  → move to “In Progress”
+  → begin timer
+  → auto-resolve after 10–30 seconds
+
+- Unassigned incidents must NOT resolve
+
+---
+
+4. 🧾 STATUS SYSTEM (CLEAR STATES)
+
+Ensure all incidents follow:
+- Unassigned (gray)
+- Assigned (blue)
+- In Progress (orange)
+- Resolved (green)
+
+- Use consistent badge styling across all pages
+
+---
+
+5. 📋 INCIDENT LOG LAYOUT FIX (IMPORTANT)
+
+- Match layout consistency between Assignments and Incident Log
+
+Fix this specifically:
+- Robot name / ID should be displayed on ONE LINE (not split into two lines)
+- Ensure:
+  - consistent row height
+  - consistent spacing
+  - same typography style
+
+- Align columns cleanly:
+  - Robot ID
+  - Issue
+  - Severity
+  - Assigned Operator
+  - Action Taken
+  - Resolution Time
+
+---
+
+6. 🧑‍💻 ASSIGNMENT PAGE CONSISTENCY
+
+- Keep current clean list layout (this is good)
+- Ensure:
+  - all text aligns consistently
+  - no awkward wrapping unless necessary
+  - same styling rules as Incident Log
+
+---
+
+7. 🔍 SHARED SEARCH + FILTER SYSTEM
+
+Apply same system across:
+- Assignments page
+- Incident Log page
+
+Include:
+- Search bar:
+  - search by Robot ID, Issue, Location
+
+- Filters:
+  - Severity (High / Medium / Low)
+  - Status (Unassigned / In Progress / Resolved)
+  - Assigned user (Assignments page)
+
+- Sorting:
+  - Newest
+  - Oldest
+  - Severity priority
+
+- Ensure dropdown menus have:
+  - strong contrast
+  - clearly visible hover states
+
+---
+
+8. 🎨 UI POLISH + READABILITY
+
+- Fix any text wrapping issues across tables
+- Improve hover states:
+  - ensure clearly visible highlight
+- Maintain consistent spacing and alignment
+- Ensure all interactive elements feel clickable
+
+---
+
+9. ⚡ OPTIONAL UX IMPROVEMENTS
+
+- Add “Assign Individually” button per row
+- Highlight unassigned incidents subtly
+- Add helper text:
+  → “Assign incidents to begin resolution”
+
+---
+
+GOAL:
+Create a clean, controlled, and realistic operations platform where users decide when automation begins, while maintaining a consistent and polished UI across all sections of the app.

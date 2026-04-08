@@ -1,0 +1,131 @@
+Enhance the existing "Robot Rescue" web application by adding advanced interactivity, filtering, and usability improvements. Maintain the current design system and premium UI, but significantly improve functionality and user control.
+
+DO NOT remove existing features — extend them.
+
+---
+
+1. 🔔 NOTIFICATION SYSTEM (MAKE BELL ICON FUNCTIONAL)
+
+- Make the notification bell clickable
+- Open a dropdown panel showing recent alerts
+- Each notification should include:
+  - Robot ID
+  - Issue type
+  - Severity
+  - Timestamp
+- Clicking a notification should navigate to the incident detail page
+
+- Add:
+  - "Mark as read" functionality
+  - Unread count badge on bell icon
+  - Visual distinction for unread vs read notifications
+
+---
+
+2. 🚨 ACTIVE vs CRITICAL FILTERS (MAKE CLICKABLE)
+
+- Make "Active Alerts" and "Critical Alerts" clickable tabs or filters
+- Define logic:
+  - Active Alerts = all unresolved incidents
+  - Critical Alerts = only high severity + unresolved
+
+- Add additional filters:
+  - High / Medium / Low severity toggle
+  - Status filter (Active, In Progress, Resolved)
+
+- Show active filter visually (highlighted state)
+
+---
+
+3. 🧩 MULTIPLE VIEW MODES (GRID + LIST)
+
+- Add toggle switch:
+  - Grid View (existing)
+  - List View (new)
+
+LIST VIEW:
+- Horizontal rows instead of cards
+- Columns:
+  - Robot ID
+  - Location
+  - Issue
+  - Severity
+  - Status
+  - Time open
+
+- Add sorting:
+  - By severity
+  - By time open
+  - By newest
+
+---
+
+4. 🔍 INCIDENT LOG SEARCH (MAKE FUNCTIONAL)
+
+- Make search bar fully functional
+- Allow searching by:
+  - Robot ID
+  - Issue type
+  - Action taken
+
+- Add filters:
+  - Date range
+  - Severity
+  - Action type
+
+- Update table dynamically as user types
+
+---
+
+5. 📊 ANALYTICS PAGE EXPANSION
+
+Add more meaningful business insights:
+
+- Add new KPI cards:
+  - "Avg Resolution Time"
+  - "Most Frequent Issue Type"
+  - "High Severity Incident %"
+
+- Add charts:
+  - Incidents over time (line chart)
+  - Resolution time distribution
+  - Top problem locations
+
+- Add “Insights” section:
+  - AI-generated summary (mocked is fine):
+    Example:
+    “High-severity incidents are most frequent in Warehouse Sector 3. Consider operational review.”
+
+---
+
+6. ⚡ PRIORITY & STATUS VISUAL IMPROVEMENTS
+
+- Add clear badges:
+  - Severity badge (color-coded)
+  - Status badge (Active / In Progress / Resolved)
+
+- Add icons for:
+  - severity
+  - status
+  - alerts
+
+---
+
+7. 🧠 SMART UX TOUCHES
+
+- Persist selected filters when switching pages
+- Add “No results found” state when filters return empty
+- Add loading skeletons for smoother transitions
+
+---
+
+8. 🎯 OPTIONAL (IF EASY)
+
+- Add “Assign Incident” feature:
+  - assign to a specific human operator (mock user)
+- Add “Response timer countdown” for high severity alerts
+
+---
+
+GOAL:
+Make the platform feel like a fully interactive, real-world enterprise system with strong usability, filtering, and data visibility. Focus on user control, clarity, and realism of operations.
