@@ -50,7 +50,7 @@ How It Works
 Tech Stack
 
 Frontend: React, Vite
-Styling: CSS / Tailwind (if applicable)
+Styling: CSS / Tailwind
 State: React Hooks (useState, useContext)
 Build Tool: Vite
 
